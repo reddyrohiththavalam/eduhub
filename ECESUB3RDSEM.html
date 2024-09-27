@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eduHub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(images/home.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        div {
+            background: rgba(116, 165, 239, 0.7);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            transition: transform 0.3s, background-color 0.3s;
+            display: inline-block;
+        }
+
+        div:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Your Subject</h1>
+    <a href="contents-m2.html"><div id="mathematics-2">Mathematics 2</div></a>
+    <a href="contents-electronic-circuits-1.html"><div id="electronic-circuits-1">Electronic Circuits-1</div></a>
+    <a href="contents-digital-electronics.html"><div id="DE">Digital Electronics</div></a>
+    <a href="contents-analog-and-digital-communications.html"><div id="ADCS">Analog and Digital Communications</div></a>
+    <a href="contents-network-analysis.html"><div id="NETWORK-ANALYSIS">Network Analysis</div></a>
+</body>
+</html>

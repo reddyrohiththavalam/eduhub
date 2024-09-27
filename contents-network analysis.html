@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eduHub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('C:\Users\NAVEEN REDDY\Desktop\EDUHUB\images\home.jpg');
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0.5em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        div {
+            background-color: rgba(65, 206, 234, 0.57);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(52, 212, 233, 0.5);
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        div:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(80, 145, 244, 0.5);
+        }
+
+        div::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 8px;
+        }
+
+        div:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="textbooks/network analysis"><div id="text book">text book</div></a>
+    <a href="question papers/network analysis.pdf"><div id="question-paper">Question Paper</div></a>
+    <a href="links/ece links.pdf"><div id="link">Links</div></a>
+    <a href="important questions/network analysis.pdf"><div id="important-questions">Important Questions</div></a>
+</body>
+</html>

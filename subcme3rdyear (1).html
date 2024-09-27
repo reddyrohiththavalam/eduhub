@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eduHub</title>
+    <style>
+        body {
+            background-image: url(images/contents.jpeg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(85, 199, 252, 0.7);
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: rgba(87, 176, 231, 0.5);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 141, 246, 0.5);
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        #digital electronics {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.2s;
+        }
+
+        #mathematics 2 {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.4s;
+        }
+
+        #operating system {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.6s;
+        }
+
+        #data structure through c {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.8s;
+        }
+
+        #data base manegement system {
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Select Your Subject</h1>
+    <a href="contents-digital eletronics.html"><div id="digital electronics">Digital Electronics</div></a>
+    <a href="contents-m2.html"><div id="mathematics 2">Mathematics 2</div></a>
+    <a href="contents-operating system.html"><div id="operating system">Operating System</div></a>
+    <a href="contents-data structures through c++.html"><div id="data structure through c">Data Structure through C++</div></a>
+    <a href="contents-data base manegement system.html"><div id="data base manegement system">Database Management System</div></a>
+</body>
+</html>
